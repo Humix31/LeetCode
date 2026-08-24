@@ -7,14 +7,14 @@ class Solution {
 
         for (int i = 0; i < nums.length - 2; i++) {
 
-            // Skip duplicate i
+            // Skip duplicate first numbers
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
 
             for (int j = i + 1; j < nums.length - 1; j++) {
 
-                // Skip duplicate j
+                // Skip duplicate second numbers
                 if (j > i + 1 && nums[j] == nums[j - 1]) {
                     continue;
                 }
