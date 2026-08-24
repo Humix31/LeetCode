@@ -21,6 +21,11 @@ class Solution {
 
                 for (int k = j + 1; k < nums.length; k++) {
 
+                    // Skip duplicate third numbers
+                    if (k > j + 1 && nums[k] == nums[k - 1]) {
+                        continue;
+                    }
+
                     if (nums[i] + nums[j] + nums[k] == 0) {
 
                         List<Integer> triplet = Arrays.asList(
